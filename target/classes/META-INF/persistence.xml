@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="persistence-data">
+		<class>com.websitedungcuthethao.entity.AnhSanPham</class>
+		<class>com.websitedungcuthethao.entity.ChiTietHoaDon</class>
+		<class>com.websitedungcuthethao.entity.ChiTietHoaDon_PK</class>
+		<class>com.websitedungcuthethao.entity.BinhLuan</class>
+		<class>com.websitedungcuthethao.entity.DanhMuc</class>
+		<class>com.websitedungcuthethao.entity.DiaChi</class>
+		<class>com.websitedungcuthethao.entity.GiaTriThuocTinhSanPham_PK</class>
+		<class>com.websitedungcuthethao.entity.GiaTriThuocTinhSanPham</class>
+		<class>com.websitedungcuthethao.entity.HoaDon</class>
+		<class>com.websitedungcuthethao.entity.LoaiNguoiDung</class>
+		<class>com.websitedungcuthethao.entity.NguoiDung</class>
+		<class>com.websitedungcuthethao.entity.NhaCungCap</class>
+		<class>com.websitedungcuthethao.entity.SanPham</class>
+		<class>com.websitedungcuthethao.entity.ThuocTinhSanPham</class>
+	</persistence-unit>
+</persistence>
+
