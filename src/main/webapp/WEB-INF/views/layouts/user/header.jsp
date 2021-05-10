@@ -49,7 +49,7 @@
 							<li><a href="login.html"><i class="fa fa-lock"></i>Thông báo</a></li>
 							<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>
 									Giỏ hàng</a></li>
-							<li><a href="login.html"><i class="fa fa-lock"></i>
+							<li><a href="dang-nhap"><i class="fa fa-lock"></i>
 									Đăng nhập</a></li>
 							
 						</ul>

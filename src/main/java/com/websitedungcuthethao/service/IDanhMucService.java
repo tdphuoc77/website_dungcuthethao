@@ -6,5 +6,5 @@ import com.websitedungcuthethao.entity.DanhMuc;
 
 public interface IDanhMucService {
 	List<DanhMuc> findAll();
-
+	DanhMuc findByTen(String ten);
 }
