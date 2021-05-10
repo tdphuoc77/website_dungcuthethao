@@ -8,8 +8,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 public class Login {
 	@RequestMapping("/dang-nhap")
-	public ModelAndView dangnhap() {
-		return new ModelAndView("login/login");
+	public String dangnhap() {
+		return "login/login";
 	}
 
 }

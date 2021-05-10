@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp"%>
 <header id="header">
 	<!--header-->
 	<div class="header_top">
@@ -38,17 +39,19 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="logo pull-left">
-						<a href="index.html"><img src=" <c:url value="/assets/user/images/home/logo.png"/> " alt="" /></a>
+						<a href="index.html"><img src=" <c:url value="/resources/images/user/logo.png"/>" alt="" /></a>
 					</div>
 				</div>
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
 						<ul class="nav navbar-nav">
-							<li><a href=""><i class="fa fa-user"></i> Account</a></li>
+							<li><a href=""><i class="fa fa-user"></i>Tài khoản</a></li>
+							<li><a href="login.html"><i class="fa fa-lock"></i>Thông báo</a></li>
 							<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>
-									Cart</a></li>
+									Giỏ hàng</a></li>
 							<li><a href="login.html"><i class="fa fa-lock"></i>
-									Login</a></li>
+									Đăng nhập</a></li>
+							
 						</ul>
 					</div>
 				</div>
