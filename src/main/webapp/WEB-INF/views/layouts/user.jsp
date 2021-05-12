@@ -10,42 +10,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title><decorator:title/></title>
-<link href='<c:url value="/resources/user/css/bootstrap.min.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/font-awesome.min.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/prettyPhoto.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/price-range.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/animate.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/main.css"/>' rel="stylesheet">
-<link href='<c:url value="/resources/user/css/responsive.css"/>' rel="stylesheet">
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    
-<link rel="shortcut icon" href='<c:url value="/resources/user/images/ico/favicon.ico"/>'>
-<link rel="apple-touch-icon-precomposed" sizes="144x144"
-	href="images/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114"
-	href="images/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72"
-	href="images/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed"
-	href="images/ico/apple-touch-icon-57-precomposed.png">
+<title><decorator:title /></title>
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- Web Font -->
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+	rel="stylesheet">
+
+<!-- StyleSheet -->
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/bootstrap.css"/>">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/magnific-popup.min.css"/>">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/font-awesome.css"/>">
+<!-- Fancybox -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/jquery.fancybox.min.css"/>">
+<!-- Themify Icons -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/themify-icons.css"/>">
+<!-- Nice Select CSS -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/niceselect.css"/>">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/animate.css"/>">
+<!-- Flex Slider CSS -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/flex-slider.min.css"/>">
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/owl-carousel.css"/>">
+<!-- Slicknav -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/slicknav.min.css"/>">
+
+<!-- Eshop StyleSheet -->
+<link rel="stylesheet" href="<c:url value="/resources/user/css/reset.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/user/style.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/user/css/responsive.css"/>">
 </head>
 <!--/head-->
 <body>
 	<%@include file="/WEB-INF/views/layouts/user/header.jsp"%>
-	
-	<decorator:body/>
+
+	<decorator:body />
 
 	<%@include file="/WEB-INF/views/layouts/user/footer.jsp"%>
-	
-	<script src=" <c:url value="/resources/user/js/jquery.js"/> "></script>
-	<script src=" <c:url value="/resources/user/js/price-range.js"/> "></script>
-	<script src=" <c:url value="/resources/user/js/jquery.scrollUp.min.js"/> "></script>
-	<script src=" <c:url value="/resources/user/js/bootstrap.min.js"/> "></script>
-	<script src=" <c:url value="/resources/user/js/jquery.prettyPhoto.js"/> "></script>
-	<script src=" <c:url value="/resources/user/js/main.js"/> "></script>
+
+	<!-- Jquery -->
+	<script src="<c:url value="/resources/user/js/jquery.min.js"/>"></script>
+	<script src="<c:url value="/resources/user/js/jquery-migrate-3.0.0.js"/>"></script>
+	<script src="<c:url value="/resources/user/js/jquery-ui.min.js"/>"></script>
+	<!-- Popper JS -->
+	<script src="<c:url value="/resources/user/js/popper.min.js"/>"></script>
+	<!-- Bootstrap JS -->
+	<script src="<c:url value="/resources/user/js/bootstrap.min.js"/>"></script>
+	<!-- Color JS -->
+	<script src="<c:url value="/resources/user/js/colors.js"/>"></script>
+	<!-- Slicknav JS -->
+	<script src="<c:url value="/resources/user/js/slicknav.min.js"/>"></script>
+	<!-- Owl Carousel JS -->
+	<script src="<c:url value="/resources/user/js/owl-carousel.js"/>"></script>
+	<!-- Magnific Popup JS -->
+	<script src="<c:url value="/resources/user/js/magnific-popup.js"/>"></script>
+	<!-- Waypoints JS -->
+	<script src="<c:url value="/resources/user/js/waypoints.min.js"/>"></script>
+	<!-- Countdown JS -->
+	<script src="<c:url value="/resources/user/js/finalcountdown.min.js"/>"></script>
+	<!-- Nice Select JS -->
+	<script src="<c:url value="/resources/user/js/nicesellect.js"/>"></script>
+	<!-- Flex Slider JS -->
+	<script src="<c:url value="/resources/user/js/flex-slider.js"/>"></script>
+	<!-- ScrollUp JS -->
+	<script src="<c:url value="/resources/user/js/scrollup.js"/>"></script>
+	<!-- Onepage Nav JS -->
+	<script src="<c:url value="/resources/user/js/onepage-nav.min.js"/>"></script>
+	<!-- Easing JS -->
+	<script src="<c:url value="/resources/user/js/easing.js"/>"></script>
+	<!-- Active JS -->
+	<script src="<c:url value="/resources/user/js/active.js"/>"></script>
 </body>
 </html>

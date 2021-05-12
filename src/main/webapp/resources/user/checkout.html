@@ -1,551 +1,831 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
+	<!-- Meta Tag -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Checkout | E-Shopper</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>Eshop - eCommerce HTML5 Template.</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	
+	<!-- StyleSheet -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+	<!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+	<!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="css/flex-slider.min.css">
+	<!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+	<!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+	
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-<body>
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-facebook"></i></a></li>
-								<li><a href=""><i class="fa fa-twitter"></i></a></li>
-								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+	
+	
+</head>
+<body class="js">
+	
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
 			</div>
-		</div><!--/header_top-->
+		</div>
+	</div>
+	<!-- End Preloader -->
 		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
-									<li><a href="">UK</a></li>
+		<!-- Header -->
+		<header class="header shop">
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-12 col-12">
+							<!-- Top Left -->
+							<div class="top-left">
+								<ul class="list-main">
+									<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+									<li><i class="ti-email"></i> support@shophub.com</li>
 								</ul>
 							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
-									<li><a href="">Pound</a></li>
+							<!--/ End Top Left -->
+						</div>
+						<div class="col-lg-8 col-md-12 col-12">
+							<!-- Top Right -->
+							<div class="right-content">
+								<ul class="list-main">
+									<li><i class="ti-location-pin"></i> Store location</li>
+									<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+									<li><i class="ti-user"></i> <a href="#">My account</a></li>
+									<li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
 								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
-								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
-							</ul>
+							<!-- End Top Right -->
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--/header-middle-->
+			<!-- End Topbar -->
+			<div class="middle-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-12">
+							<!-- Logo -->
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+							</div>
+							<!--/ End Logo -->
+							<!-- Search Form -->
+							<div class="search-top">
+								<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+								<!-- Search Form -->
+								<div class="search-top">
+									<form class="search-form">
+										<input type="text" placeholder="Search here..." name="search">
+										<button value="search" type="submit"><i class="ti-search"></i></button>
+									</form>
+								</div>
+								<!--/ End Search Form -->
+							</div>
+							<!--/ End Search Form -->
+							<div class="mobile-nav"></div>
+						</div>
+						<div class="col-lg-8 col-md-7 col-12">
+							<div class="search-bar-top">
+								<div class="search-bar">
+									<select>
+										<option selected="selected">All Category</option>
+										<option>watch</option>
+										<option>mobile</option>
+										<option>kid’s item</option>
+									</select>
+									<form>
+										<input name="search" placeholder="Search Products Here....." type="search">
+										<button class="btnn"><i class="ti-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-12">
+							<div class="right-bar">
+								<!-- Search Form -->
+								<div class="sinlge-bar">
+									<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar">
+									<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar shopping">
+									<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+									<!-- Shopping Item -->
+									<div class="shopping-item">
+										<div class="dropdown-cart-header">
+											<span>2 Items</span>
+											<a href="#">View Cart</a>
+										</div>
+										<ul class="shopping-list">
+											<li>
+												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+												<h4><a href="#">Woman Ring</a></h4>
+												<p class="quantity">1x - <span class="amount">$99.00</span></p>
+											</li>
+											<li>
+												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+												<h4><a href="#">Woman Necklace</a></h4>
+												<p class="quantity">1x - <span class="amount">$35.00</span></p>
+											</li>
+										</ul>
+										<div class="bottom">
+											<div class="total">
+												<span>Total</span>
+												<span class="total-amount">$134.00</span>
+											</div>
+											<a href="checkout.html" class="btn animate">Checkout</a>
+										</div>
+									</div>
+									<!--/ End Shopping Item -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="cat-nav-head">
+						<div class="row">
+							<div class="col-12">
+								<div class="menu-area">
+									<!-- Main Menu -->
+									<nav class="navbar navbar-expand-lg">
+										<div class="navbar-collapse">	
+											<div class="nav-inner">	
+												<ul class="nav main-menu menu navbar-nav">
+													<li class="active"><a href="#">Home</a></li>
+													<li><a href="#">Product</a></li>												
+													<li><a href="#">Service</a></li>
+													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+														<ul class="dropdown">
+															<li><a href="shop-grid.html">Shop Grid</a></li>
+															<li><a href="cart.html">Cart</a></li>
+															<li><a href="checkout.html">Checkout</a></li>
+														</ul>
+													</li>
+													<li><a href="#">Pages</a></li>									
+													<li><a href="#">Blog<i class="ti-angle-down"></i></a>
+														<ul class="dropdown">
+															<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
+														</ul>
+													</li>
+													<li><a href="contact.html">Contact Us</a></li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+									<!--/ End Main Menu -->	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!--/ End Header -->
 	
-		<div class="header-bottom"><!--header-bottom-->
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html">Home</a></li>
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-										<li><a href="product-details.html">Product Details</a></li> 
-										<li><a href="checkout.html" class="active">Checkout</a></li> 
-										<li><a href="cart.html">Cart</a></li> 
-										<li><a href="login.html">Login</a></li> 
-                                    </ul>
-                                </li> 
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+					<div class="col-12">
+						<div class="bread-inner">
+							<ul class="bread-list">
+								<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="blog-single.html">Checkout</a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
-
-	<section id="cart_items">
-		<div class="container">
-			<div class="breadcrumbs">
-				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
-				  <li class="active">Check out</li>
-				</ol>
-			</div><!--/breadcrums-->
-
-			<div class="step-one">
-				<h2 class="heading">Step1</h2>
-			</div>
-			<div class="checkout-options">
-				<h3>New User</h3>
-				<p>Checkout options</p>
-				<ul class="nav">
-					<li>
-						<label><input type="checkbox"> Register Account</label>
-					</li>
-					<li>
-						<label><input type="checkbox"> Guest Checkout</label>
-					</li>
-					<li>
-						<a href=""><i class="fa fa-times"></i>Cancel</a>
-					</li>
-				</ul>
-			</div><!--/checkout-options-->
-
-			<div class="register-req">
-				<p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
-			</div><!--/register-req-->
-
-			<div class="shopper-informations">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="shopper-info">
-							<p>Shopper Information</p>
-							<form>
-								<input type="text" placeholder="Display Name">
-								<input type="text" placeholder="User Name">
-								<input type="password" placeholder="Password">
-								<input type="password" placeholder="Confirm password">
+		</div>
+		<!-- End Breadcrumbs -->
+				
+		<!-- Start Checkout -->
+		<section class="shop checkout section">
+			<div class="container">
+				<div class="row"> 
+					<div class="col-lg-8 col-12">
+						<div class="checkout-form">
+							<h2>Make Your Checkout Here</h2>
+							<p>Please register in order to checkout more quickly</p>
+							<!-- Form -->
+							<form class="form" method="post" action="#">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>First Name<span>*</span></label>
+											<input type="text" name="name" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Last Name<span>*</span></label>
+											<input type="text" name="name" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Email Address<span>*</span></label>
+											<input type="email" name="email" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Phone Number<span>*</span></label>
+											<input type="number" name="number" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Country<span>*</span></label>
+											<select name="country_name" id="country">
+												<option value="AF">Afghanistan</option>
+												<option value="AX">Åland Islands</option>
+												<option value="AL">Albania</option>
+												<option value="DZ">Algeria</option>
+												<option value="AS">American Samoa</option>
+												<option value="AD">Andorra</option>
+												<option value="AO">Angola</option>
+												<option value="AI">Anguilla</option>
+												<option value="AQ">Antarctica</option>
+												<option value="AG">Antigua and Barbuda</option>
+												<option value="AR">Argentina</option>
+												<option value="AM">Armenia</option>
+												<option value="AW">Aruba</option>
+												<option value="AU">Australia</option>
+												<option value="AT">Austria</option>
+												<option value="AZ">Azerbaijan</option>
+												<option value="BS">Bahamas</option>
+												<option value="BH">Bahrain</option>
+												<option value="BD">Bangladesh</option>
+												<option value="BB">Barbados</option>
+												<option value="BY">Belarus</option>
+												<option value="BE">Belgium</option>
+												<option value="BZ">Belize</option>
+												<option value="BJ">Benin</option>
+												<option value="BM">Bermuda</option>
+												<option value="BT">Bhutan</option>
+												<option value="BO">Bolivia</option>
+												<option value="BA">Bosnia and Herzegovina</option>
+												<option value="BW">Botswana</option>
+												<option value="BV">Bouvet Island</option>
+												<option value="BR">Brazil</option>
+												<option value="IO">British Indian Ocean Territory</option>
+												<option value="VG">British Virgin Islands</option>
+												<option value="BN">Brunei</option>
+												<option value="BG">Bulgaria</option>
+												<option value="BF">Burkina Faso</option>
+												<option value="BI">Burundi</option>
+												<option value="KH">Cambodia</option>
+												<option value="CM">Cameroon</option>
+												<option value="CA">Canada</option>
+												<option value="CV">Cape Verde</option>
+												<option value="KY">Cayman Islands</option>
+												<option value="CF">Central African Republic</option>
+												<option value="TD">Chad</option>
+												<option value="CL">Chile</option>
+												<option value="CN">China</option>
+												<option value="CX">Christmas Island</option>
+												<option value="CC">Cocos [Keeling] Islands</option>
+												<option value="CO">Colombia</option>
+												<option value="KM">Comoros</option>
+												<option value="CG">Congo - Brazzaville</option>
+												<option value="CD">Congo - Kinshasa</option>
+												<option value="CK">Cook Islands</option>
+												<option value="CR">Costa Rica</option>
+												<option value="CI">Côte d’Ivoire</option>
+												<option value="HR">Croatia</option>
+												<option value="CU">Cuba</option>
+												<option value="CY">Cyprus</option>
+												<option value="CZ">Czech Republic</option>
+												<option value="DK">Denmark</option>
+												<option value="DJ">Djibouti</option>
+												<option value="DM">Dominica</option>
+												<option value="DO">Dominican Republic</option>
+												<option value="EC">Ecuador</option>
+												<option value="EG">Egypt</option>
+												<option value="SV">El Salvador</option>
+												<option value="GQ">Equatorial Guinea</option>
+												<option value="ER">Eritrea</option>
+												<option value="EE">Estonia</option>
+												<option value="ET">Ethiopia</option>
+												<option value="FK">Falkland Islands</option>
+												<option value="FO">Faroe Islands</option>
+												<option value="FJ">Fiji</option>
+												<option value="FI">Finland</option>
+												<option value="FR">France</option>
+												<option value="GF">French Guiana</option>
+												<option value="PF">French Polynesia</option>
+												<option value="TF">French Southern Territories</option>
+												<option value="GA">Gabon</option>
+												<option value="GM">Gambia</option>
+												<option value="GE">Georgia</option>
+												<option value="DE">Germany</option>
+												<option value="GH">Ghana</option>
+												<option value="GI">Gibraltar</option>
+												<option value="GR">Greece</option>
+												<option value="GL">Greenland</option>
+												<option value="GD">Grenada</option>
+												<option value="GP">Guadeloupe</option>
+												<option value="GU">Guam</option>
+												<option value="GT">Guatemala</option>
+												<option value="GG">Guernsey</option>
+												<option value="GN">Guinea</option>
+												<option value="GW">Guinea-Bissau</option>
+												<option value="GY">Guyana</option>
+												<option value="HT">Haiti</option>
+												<option value="HM">Heard Island and McDonald Islands</option>
+												<option value="HN">Honduras</option>
+												<option value="HK">Hong Kong SAR China</option>
+												<option value="HU">Hungary</option>
+												<option value="IS">Iceland</option>
+												<option value="IN">India</option>
+												<option value="ID">Indonesia</option>
+												<option value="IR">Iran</option>
+												<option value="IQ">Iraq</option>
+												<option value="IE">Ireland</option>
+												<option value="IM">Isle of Man</option>
+												<option value="IL">Israel</option>
+												<option value="IT">Italy</option>
+												<option value="JM">Jamaica</option>
+												<option value="JP">Japan</option>
+												<option value="JE">Jersey</option>
+												<option value="JO">Jordan</option>
+												<option value="KZ">Kazakhstan</option>
+												<option value="KE">Kenya</option>
+												<option value="KI">Kiribati</option>
+												<option value="KW">Kuwait</option>
+												<option value="KG">Kyrgyzstan</option>
+												<option value="LA">Laos</option>
+												<option value="LV">Latvia</option>
+												<option value="LB">Lebanon</option>
+												<option value="LS">Lesotho</option>
+												<option value="LR">Liberia</option>
+												<option value="LY">Libya</option>
+												<option value="LI">Liechtenstein</option>
+												<option value="LT">Lithuania</option>
+												<option value="LU">Luxembourg</option>
+												<option value="MO">Macau SAR China</option>
+												<option value="MK">Macedonia</option>
+												<option value="MG">Madagascar</option>
+												<option value="MW">Malawi</option>
+												<option value="MY">Malaysia</option>
+												<option value="MV">Maldives</option>
+												<option value="ML">Mali</option>
+												<option value="MT">Malta</option>
+												<option value="MH">Marshall Islands</option>
+												<option value="MQ">Martinique</option>
+												<option value="MR">Mauritania</option>
+												<option value="MU">Mauritius</option>
+												<option value="YT">Mayotte</option>
+												<option value="MX">Mexico</option>
+												<option value="FM">Micronesia</option>
+												<option value="MD">Moldova</option>
+												<option value="MC">Monaco</option>
+												<option value="MN">Mongolia</option>
+												<option value="ME">Montenegro</option>
+												<option value="MS">Montserrat</option>
+												<option value="MA">Morocco</option>
+												<option value="MZ">Mozambique</option>
+												<option value="MM">Myanmar [Burma]</option>
+												<option value="NA">Namibia</option>
+												<option value="NR">Nauru</option>
+												<option value="NP">Nepal</option>
+												<option value="NL">Netherlands</option>
+												<option value="AN">Netherlands Antilles</option>
+												<option value="NC">New Caledonia</option>
+												<option value="NZ">New Zealand</option>
+												<option value="NI">Nicaragua</option>
+												<option value="NE">Niger</option>
+												<option value="NG">Nigeria</option>
+												<option value="NU">Niue</option>
+												<option value="NF">Norfolk Island</option>
+												<option value="MP">Northern Mariana Islands</option>
+												<option value="KP">North Korea</option>
+												<option value="NO">Norway</option>
+												<option value="OM">Oman</option>
+												<option value="PK">Pakistan</option>
+												<option value="PW">Palau</option>
+												<option value="PS">Palestinian Territories</option>
+												<option value="PA">Panama</option>
+												<option value="PG">Papua New Guinea</option>
+												<option value="PY">Paraguay</option>
+												<option value="PE">Peru</option>
+												<option value="PH">Philippines</option>
+												<option value="PN">Pitcairn Islands</option>
+												<option value="PL">Poland</option>
+												<option value="PT">Portugal</option>
+												<option value="PR">Puerto Rico</option>
+												<option value="QA">Qatar</option>
+												<option value="RE">Réunion</option>
+												<option value="RO">Romania</option>
+												<option value="RU">Russia</option>
+												<option value="RW">Rwanda</option>
+												<option value="BL">Saint Barthélemy</option>
+												<option value="SH">Saint Helena</option>
+												<option value="KN">Saint Kitts and Nevis</option>
+												<option value="LC">Saint Lucia</option>
+												<option value="MF">Saint Martin</option>
+												<option value="PM">Saint Pierre and Miquelon</option>
+												<option value="VC">Saint Vincent and the Grenadines</option>
+												<option value="WS">Samoa</option>
+												<option value="SM">San Marino</option>
+												<option value="ST">São Tomé and Príncipe</option>
+												<option value="SA">Saudi Arabia</option>
+												<option value="SN">Senegal</option>
+												<option value="RS">Serbia</option>
+												<option value="SC">Seychelles</option>
+												<option value="SL">Sierra Leone</option>
+												<option value="SG">Singapore</option>
+												<option value="SK">Slovakia</option>
+												<option value="SI">Slovenia</option>
+												<option value="SB">Solomon Islands</option>
+												<option value="SO">Somalia</option>
+												<option value="ZA">South Africa</option>
+												<option value="GS">South Georgia</option>
+												<option value="KR">South Korea</option>
+												<option value="ES">Spain</option>
+												<option value="LK">Sri Lanka</option>
+												<option value="SD">Sudan</option>
+												<option value="SR">Suriname</option>
+												<option value="SJ">Svalbard and Jan Mayen</option>
+												<option value="SZ">Swaziland</option>
+												<option value="SE">Sweden</option>
+												<option value="CH">Switzerland</option>
+												<option value="SY">Syria</option>
+												<option value="TW">Taiwan</option>
+												<option value="TJ">Tajikistan</option>
+												<option value="TZ">Tanzania</option>
+												<option value="TH">Thailand</option>
+												<option value="TL">Timor-Leste</option>
+												<option value="TG">Togo</option>
+												<option value="TK">Tokelau</option>
+												<option value="TO">Tonga</option>
+												<option value="TT">Trinidad and Tobago</option>
+												<option value="TN">Tunisia</option>
+												<option value="TR">Turkey</option>
+												<option value="TM">Turkmenistan</option>
+												<option value="TC">Turks and Caicos Islands</option>
+												<option value="TV">Tuvalu</option>
+												<option value="UG">Uganda</option>
+												<option value="UA">Ukraine</option>
+												<option value="AE">United Arab Emirates</option>
+												<option value="US" selected="selected">United Kingdom</option>
+												<option value="UY">Uruguay</option>
+												<option value="UM">U.S. Minor Outlying Islands</option>
+												<option value="VI">U.S. Virgin Islands</option>
+												<option value="UZ">Uzbekistan</option>
+												<option value="VU">Vanuatu</option>
+												<option value="VA">Vatican City</option>
+												<option value="VE">Venezuela</option>
+												<option value="VN">Vietnam</option>
+												<option value="WF">Wallis and Futuna</option>
+												<option value="EH">Western Sahara</option>
+												<option value="YE">Yemen</option>
+												<option value="ZM">Zambia</option>
+												<option value="ZW">Zimbabwe</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>State / Divition<span>*</span></label>
+											<select name="state-province" id="state-province">
+												<option value="divition" selected="selected">New Yourk</option>
+												<option>Los Angeles</option>
+												<option>Chicago</option>
+												<option>Houston</option>
+												<option>San Diego</option>
+												<option>Dallas</option>
+												<option>Charlotte</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Address Line 1<span>*</span></label>
+											<input type="text" name="address" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Address Line 2<span>*</span></label>
+											<input type="text" name="address" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Postal Code<span>*</span></label>
+											<input type="text" name="post" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Company<span>*</span></label>
+											<select name="company_name" id="company">
+												<option value="company" selected="selected">Microsoft</option>
+												<option>Apple</option>
+												<option>Xaiomi</option>
+												<option>Huawer</option>
+												<option>Wpthemesgrid</option>
+												<option>Samsung</option>
+												<option>Motorola</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group create-account">
+											<input id="cbox" type="checkbox">
+											<label>Create an account?</label>
+										</div>
+									</div>
+								</div>
 							</form>
-							<a class="btn btn-primary" href="">Get Quotes</a>
-							<a class="btn btn-primary" href="">Continue</a>
+							<!--/ End Form -->
 						</div>
 					</div>
-					<div class="col-sm-5 clearfix">
-						<div class="bill-to">
-							<p>Bill To</p>
-							<div class="form-one">
-								<form>
-									<input type="text" placeholder="Company Name">
-									<input type="text" placeholder="Email*">
-									<input type="text" placeholder="Title">
-									<input type="text" placeholder="First Name *">
-									<input type="text" placeholder="Middle Name">
-									<input type="text" placeholder="Last Name *">
-									<input type="text" placeholder="Address 1 *">
-									<input type="text" placeholder="Address 2">
+					<div class="col-lg-4 col-12">
+						<div class="order-details">
+							<!-- Order Widget -->
+							<div class="single-widget">
+								<h2>CART  TOTALS</h2>
+								<div class="content">
+									<ul>
+										<li>Sub Total<span>$330.00</span></li>
+										<li>(+) Shipping<span>$10.00</span></li>
+										<li class="last">Total<span>$340.00</span></li>
+									</ul>
+								</div>
+							</div>
+							<!--/ End Order Widget -->
+							<!-- Order Widget -->
+							<div class="single-widget">
+								<h2>Payments</h2>
+								<div class="content">
+									<div class="checkbox">
+										<label class="checkbox-inline" for="1"><input name="updates" id="1" type="checkbox"> Check Payments</label>
+										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Cash On Delivery</label>
+										<label class="checkbox-inline" for="3"><input name="news" id="3" type="checkbox"> PayPal</label>
+									</div>
+								</div>
+							</div>
+							<!--/ End Order Widget -->
+							<!-- Payment Method Widget -->
+							<div class="single-widget payement">
+								<div class="content">
+									<img src="images/payment-method.png" alt="#">
+								</div>
+							</div>
+							<!--/ End Payment Method Widget -->
+							<!-- Button Widget -->
+							<div class="single-widget get-button">
+								<div class="content">
+									<div class="button">
+										<a href="#" class="btn">proceed to checkout</a>
+									</div>
+								</div>
+							</div>
+							<!--/ End Button Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Checkout -->
+		
+		<!-- Start Shop Services Area  -->
+		<section class="shop-services section home">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="ti-rocket"></i>
+							<h4>Free shiping</h4>
+							<p>Orders over $100</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="ti-reload"></i>
+							<h4>Free Return</h4>
+							<p>Within 30 days returns</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="ti-lock"></i>
+							<h4>Sucure Payment</h4>
+							<p>100% secure payment</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="ti-tag"></i>
+							<h4>Best Peice</h4>
+							<p>Guaranteed price</p>
+						</div>
+						<!-- End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Shop Services -->
+		
+		<!-- Start Shop Newsletter  -->
+		<section class="shop-newsletter section">
+			<div class="container">
+				<div class="inner-top">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 col-12">
+							<!-- Start Newsletter Inner -->
+							<div class="inner">
+								<h4>Newsletter</h4>
+								<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="EMAIL" placeholder="Your email address" required="" type="email">
+									<button class="btn">Subscribe</button>
 								</form>
 							</div>
-							<div class="form-two">
-								<form>
-									<input type="text" placeholder="Zip / Postal Code *">
-									<select>
-										<option>-- Country --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
-										<option>UK</option>
-										<option>India</option>
-										<option>Pakistan</option>
-										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
-									</select>
-									<select>
-										<option>-- State / Province / Region --</option>
-										<option>United States</option>
-										<option>Bangladesh</option>
-										<option>UK</option>
-										<option>India</option>
-										<option>Pakistan</option>
-										<option>Ucrane</option>
-										<option>Canada</option>
-										<option>Dubai</option>
-									</select>
-									<input type="password" placeholder="Confirm password">
-									<input type="text" placeholder="Phone *">
-									<input type="text" placeholder="Mobile Phone">
-									<input type="text" placeholder="Fax">
-								</form>
-							</div>
+							<!-- End Newsletter Inner -->
 						</div>
 					</div>
-					<div class="col-sm-4">
-						<div class="order-message">
-							<p>Shipping Order</p>
-							<textarea name="message"  placeholder="Notes about your order, Special Notes for Delivery" rows="16"></textarea>
-							<label><input type="checkbox"> Shipping to bill address</label>
-						</div>	
-					</div>					
 				</div>
 			</div>
-			<div class="review-payment">
-				<h2>Review & Payment</h2>
-			</div>
-
-			<div class="table-responsive cart_info">
-				<table class="table table-condensed">
-					<thead>
-						<tr class="cart_menu">
-							<td class="image">Item</td>
-							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/one.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
+		</section>
+		<!-- End Shop Newsletter -->
+			
+		<!-- Start Footer Area -->
+		<footer class="footer">
+			<!-- Footer Top -->
+			<div class="footer-top section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-12">
+							<!-- Single Widget -->
+							<div class="single-footer about">
+								<div class="logo">
+									<a href="index.html"><img src="images/logo2.png" alt="#"></a>
 								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/two.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
+								<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+								<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+							</div>
+							<!-- End Single Widget -->
+						</div>
+						<div class="col-lg-2 col-md-6 col-12">
+							<!-- Single Widget -->
+							<div class="single-footer links">
+								<h4>Information</h4>
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Faq</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Help</a></li>
+								</ul>
+							</div>
+							<!-- End Single Widget -->
+						</div>
+						<div class="col-lg-2 col-md-6 col-12">
+							<!-- Single Widget -->
+							<div class="single-footer links">
+								<h4>Customer Service</h4>
+								<ul>
+									<li><a href="#">Payment Methods</a></li>
+									<li><a href="#">Money-back</a></li>
+									<li><a href="#">Returns</a></li>
+									<li><a href="#">Shipping</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- End Single Widget -->
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<!-- Single Widget -->
+							<div class="single-footer social">
+								<h4>Get In Tuch</h4>
+								<!-- Single Widget -->
+								<div class="contact">
+									<ul>
+										<li>NO. 342 - London Oxford Street.</li>
+										<li>012 United Kingdom.</li>
+										<li>info@eshop.com</li>
+										<li>+032 3456 7890</li>
+									</ul>
 								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/cart/three.png" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">Colorblock Scuba</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
+								<!-- End Single Widget -->
+								<ul>
+									<li><a href="#"><i class="ti-facebook"></i></a></li>
+									<li><a href="#"><i class="ti-twitter"></i></a></li>
+									<li><a href="#"><i class="ti-flickr"></i></a></li>
+									<li><a href="#"><i class="ti-instagram"></i></a></li>
+								</ul>
+							</div>
+							<!-- End Single Widget -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Top -->
+			<div class="copyright">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-6 col-12">
+								<div class="left">
+									<p>Copyright © 2020 <a href="http://www.wpthemesgrid.com" target="_blank">Wpthemesgrid</a>  -  All Rights Reserved.</p>
 								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">&nbsp;</td>
-							<td colspan="2">
-								<table class="table table-condensed total-result">
-									<tr>
-										<td>Cart Sub Total</td>
-										<td>$59</td>
-									</tr>
-									<tr>
-										<td>Exo Tax</td>
-										<td>$2</td>
-									</tr>
-									<tr class="shipping-cost">
-										<td>Shipping Cost</td>
-										<td>Free</td>										
-									</tr>
-									<tr>
-										<td>Total</td>
-										<td><span>$61</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="payment-options">
-					<span>
-						<label><input type="checkbox"> Direct Bank Transfer</label>
-					</span>
-					<span>
-						<label><input type="checkbox"> Check Payment</label>
-					</span>
-					<span>
-						<label><input type="checkbox"> Paypal</label>
-					</span>
-				</div>
-		</div>
-	</section> <!--/#cart_items-->
-
-	
-
-	<footer id="footer"><!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
 							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+							<div class="col-lg-6 col-12">
+								<div class="right">
+									<img src="images/payments.png" alt="#">
+								</div>
 							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="footer-widget">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Service</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="">Online Help</a></li>
-								<li><a href="">Contact Us</a></li>
-								<li><a href="">Order Status</a></li>
-								<li><a href="">Change Location</a></li>
-								<li><a href="">FAQ’s</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Quock Shop</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="">T-Shirt</a></li>
-								<li><a href="">Mens</a></li>
-								<li><a href="">Womens</a></li>
-								<li><a href="">Gift Cards</a></li>
-								<li><a href="">Shoes</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Policies</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="">Terms of Use</a></li>
-								<li><a href="">Privecy Policy</a></li>
-								<li><a href="">Refund Policy</a></li>
-								<li><a href="">Billing System</a></li>
-								<li><a href="">Ticket System</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="">Company Information</a></li>
-								<li><a href="">Careers</a></li>
-								<li><a href="">Store Location</a></li>
-								<li><a href="">Affillate Program</a></li>
-								<li><a href="">Copyright</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<form action="#" class="searchform">
-								<input type="text" placeholder="Your email address" />
-								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-								<p>Get the most recent updates from <br />our site and be updated your self...</p>
-							</form>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
-				</div>
-			</div>
-		</div>
-		
-	</footer><!--/Footer-->
-	
-
-
-    <script src="js/jquery.js"></script>
+		</footer>
+		<!-- /End Footer Area -->
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
 	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+	<!-- Color JS -->
+	<script src="js/colors.js"></script>
+	<!-- Slicknav JS -->
+	<script src="js/slicknav.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="js/owl-carousel.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="js/magnific-popup.js"></script>
+	<!-- Fancybox JS -->
+	<script src="js/facnybox.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Countdown JS -->
+	<script src="js/finalcountdown.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="js/nicesellect.js"></script>
+	<!-- Ytplayer JS -->
+	<script src="js/ytplayer.min.js"></script>
+	<!-- Flex Slider JS -->
+	<script src="js/flex-slider.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="js/scrollup.js"></script>
+	<!-- Onepage Nav JS -->
+	<script src="js/onepage-nav.min.js"></script>
+	<!-- Easing JS -->
+	<script src="js/easing.js"></script>
+	<!-- Active JS -->
+	<script src="js/active.js"></script>
 </body>
 </html>

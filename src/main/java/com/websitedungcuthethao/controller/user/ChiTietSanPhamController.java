@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ChiTietSanPhamController {
 	@GetMapping
 	public String index(Model model) {
-		return
+		return null;
 	}
 
 }
