@@ -43,8 +43,9 @@
 
 <!-- Eshop StyleSheet -->
 <link rel="stylesheet" href="<c:url value="/resources/user/css/reset.css"/>">
-<link rel="stylesheet" href="<c:url value="/resources/user/style.css"/>">
+
 <link rel="stylesheet" href="<c:url value="/resources/user/css/responsive.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/user/style.css"/>">
 </head>
 <!--/head-->
 <body>

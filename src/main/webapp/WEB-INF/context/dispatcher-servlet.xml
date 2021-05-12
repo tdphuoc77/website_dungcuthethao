@@ -37,4 +37,8 @@
 	
 	<mvc:resources location="/resources/" mapping="/resources/**" />
 	
+	 <mvc:interceptors>
+	 	<bean class="com.websitedungcuthethao.intercepter.MenuHandleIntercepter"></bean>
+	 </mvc:interceptors>
+	
 </beans>

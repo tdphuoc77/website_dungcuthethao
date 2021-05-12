@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglib.jsp"%>
-<link rel="stylesheet" href="<c:url value="/resources/user/style.css"/>">
 <!-- Header -->
 <header class="header shop">
 	<!-- Topbar -->
@@ -145,28 +144,14 @@
 								<i class="fa fa-bars" aria-hidden="true"></i>DANH MỤC
 							</h3>
 							<ul class="main-category">
-								<li><a href="#">New Arrivals <i
-										class="fa fa-angle-right" aria-hidden="true"></i></a>
-									<ul class="sub-category">
-										<li><a href="#">accessories</a></li>
-										<li><a href="#">best selling</a></li>
-										<li><a href="#">top 100 offer</a></li>
-										<li><a href="#">sunglass</a></li>
-										<li><a href="#">watch</a></li>
-										<li><a href="#">man’s product</a></li>
-										<li><a href="#">ladies</a></li>
-										<li><a href="#">westrn dress</a></li>
-										<li><a href="#">denim </a></li>
-									</ul></li>
-								
-								<li><a href="#">accessories</a></li>
-								<li><a href="#">top 100 offer</a></li>
-								<li><a href="#">sunglass</a></li>
-								<li><a href="#">watch</a></li>
-								<li><a href="#">man’s product</a></li>
-								<li><a href="#">ladies</a></li>
-								<li><a href="#">westrn dress</a></li>
-								<li><a href="#">denim </a></li>
+								<c:forEach items="${dsDanhMuc}" var="item">
+									<li><a href="#">${item.ten} <i
+											class="fa fa-angle-right" aria-hidden="true"></i></a>
+										<ul class="sub-category">
+											<li><a href="#">accessories</a></li>
+										</ul></li>
+								</c:forEach>
+
 							</ul>
 						</div>
 					</div>

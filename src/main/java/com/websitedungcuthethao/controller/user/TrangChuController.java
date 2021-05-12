@@ -25,9 +25,7 @@ public class TrangChuController {
 	@GetMapping
 	public String index (Model model) {
 		ArrayList<SanPham> dsSanPham = (ArrayList<SanPham>) sanPhamService.findAll();
-		ArrayList<DanhMuc> dsDanhMuc = (ArrayList<DanhMuc>) danhMucService.findAll();
 		model.addAttribute("dsSanPham",dsSanPham );
-		model.addAttribute("dsDanhMuc",dsDanhMuc );
 		return "user/home";
 	}
 	

@@ -19,5 +19,5 @@ import lombok.ToString;
 @ToString
 public class DanhMuc extends BaseEntity{
 	private String ten;
-	private Long danhmuccha_id;
+	private Long danhMucCha;
 }
