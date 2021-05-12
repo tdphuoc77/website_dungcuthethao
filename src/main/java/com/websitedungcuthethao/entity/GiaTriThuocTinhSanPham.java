@@ -16,8 +16,6 @@ import lombok.ToString;
 @IdClass(GiaTriThuocTinhSanPham_PK.class)
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @ToString
 public class GiaTriThuocTinhSanPham {
 	

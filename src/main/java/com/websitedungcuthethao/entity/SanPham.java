@@ -29,58 +29,46 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class SanPham {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+public class SanPham extends BaseEntity{
+
 	
-	@NonNull
+	
 	private String ten;
 	
-	@NonNull
+	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "danhmucID", nullable = false)
 	private DanhMuc danhmuc;
 	
-	@NonNull
+	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "nhacungcapID", nullable = false)
 	private NhaCungCap nhacungcap;
 	
-	@NonNull
+	
 	private String moTa;
-	@NonNull
+	
 	private String  thuongHieu;
-	@NonNull
+	
 	private String noiDung;
-	@NonNull
+	
 	private double gia;
-	@NonNull
+	
 	private double giaGiam;
-	@NonNull
+	
 	private int soLuong;
-	@NonNull
+	
 	private String anhDaiDien;
-	@NonNull
+	
 	private int luotXem;
-	@NonNull
+	
 	private String video;
-	@NonNull
+	
 	private int thoiGianBaoHanh;
-	@NonNull
+	
 	private boolean trangThai;
-	@NonNull
-	private LocalDate ngayTao;
-	@NonNull
-	private int nguoiTao;
-	@NonNull
-	private LocalDate ngaySua;
-	@NonNull
-	private int nguoiSua;
 	
 //	@OneToMany(mappedBy = "sanpham")
 //	private List<GiaTriThuocTinhSanPham> dsThuocTinhSanPham = new ArrayList<GiaTriThuocTinhSanPham>();

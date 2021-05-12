@@ -18,8 +18,8 @@ public class BinhLuanService implements IBinhLuanService{
 		return binhLuanRepository.save(binhLuan);
 	}
 	@Override
-	public boolean delete(int id) {
-		return binhLuanRepository.delete(id);
+	public boolean deleteById(Long id) {
+		return binhLuanRepository.deleteById(id);
 	}
 	
 	

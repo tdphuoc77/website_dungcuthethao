@@ -18,29 +18,23 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class BinhLuan {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+public class BinhLuan extends BaseEntity {
 	
-	@NonNull
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "nguoidungID")
 	private NguoiDung nguoidung;
 	
-	@NonNull
+	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "sanphamID")
 	private SanPham sanpham;
 	
-	@NonNull
+	
 	private String binhLuan;
-	@NonNull
+
 	private int danhGia;
-	@NonNull
+	
 	private String anhSanPham;
 }

@@ -6,7 +6,7 @@ import com.websitedungcuthethao.entity.NhaCungCap;
 
 public interface INhaCungCapService {
 	NhaCungCap saveNCC(NhaCungCap nhaCungCap);
-	boolean updateNCC(int id);
+	boolean updateNCC(Long id);
 	List<NhaCungCap> findByTenNhaCungCap(String ten);
-	NhaCungCap findNCCByID(int id);
+	NhaCungCap findNCCByID(Long id);
 }

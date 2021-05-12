@@ -24,7 +24,7 @@ public class SanPhamService implements ISanPhamService {
 		return list;
 	}	
 	@Override
-	public SanPham findById(int id) {
+	public SanPham findById(Long id) {
 		return sanPhamRepository.findOne(id);
 	}
 	@Override
@@ -32,8 +32,8 @@ public class SanPhamService implements ISanPhamService {
 		return sanPhamRepository.findByTen(ten);
 	}
 	@Override
-	public boolean delete(int id) {
-		return sanPhamRepository.delete(id);
+	public boolean deleteById(Long id) {
+		return sanPhamRepository.deleteById(id);
 	}
 	@Override
 	public void save(SanPham sanPham) {
@@ -64,6 +64,9 @@ public class SanPhamService implements ISanPhamService {
 		sanPham.setVideo(sanPhamDTO.getVideo());
 		
 	}
-	
-	
+	@Override
+	public List<SanPham> findSanPhamGoiY() {
+		// TODO Auto-generated method stub
+		return sanPhamRepository.findSanPhamGoiY();
+	}
 }

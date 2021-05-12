@@ -11,10 +11,8 @@ import lombok.ToString;
 
 @Embeddable
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @ToString
 public class ChiTietHoaDon_PK implements Serializable {
-	private int sanpham;
-	private int hoadon;
+	private Long sanpham;
+	private Long hoadon;
 }

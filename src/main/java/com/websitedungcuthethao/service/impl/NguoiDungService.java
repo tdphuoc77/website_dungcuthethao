@@ -30,7 +30,7 @@ public class NguoiDungService  implements INguoiDungService{
 	}
 
 	@Override
-	public NguoiDung findById(int id) {
+	public NguoiDung findById(Long id) {
 		return nguoiDungRepository.findOne(id);
 	}
 

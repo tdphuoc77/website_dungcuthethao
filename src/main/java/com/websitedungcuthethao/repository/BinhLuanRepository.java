@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.websitedungcuthethao.entity.BinhLuan;
 
-public interface BinhLuanRepository extends JpaRepository<BinhLuan, Integer>{
+public interface BinhLuanRepository extends JpaRepository<BinhLuan, Long>{
 	List<BinhLuan> findAll();
-	boolean delete(int id);
+	boolean deleteById(Long id);
 }

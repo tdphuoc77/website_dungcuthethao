@@ -22,25 +22,20 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class HoaDon {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+public class HoaDon extends BaseEntity{
 	
-	@NonNull
+	
 	@ManyToOne
 	@JoinColumn(name = "nguoidungID")
 	private NguoiDung nguoidung;
-	@NonNull
+	
 	private boolean trangThai;
-	@NonNull
+	
 	private LocalDate ngayDat;
-	@NonNull
+	
 	private LocalDate ngayNhanDuKien;
-	@NonNull
+	
 	private LocalDate ngayNhan;
 }

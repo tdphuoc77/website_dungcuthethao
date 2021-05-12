@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.websitedungcuthethao.entity.GiaTriThuocTinhSanPham;
 
-public interface GiaTriThuocTinhSanPhamRepository extends JpaRepository<GiaTriThuocTinhSanPham, Integer> {
+public interface GiaTriThuocTinhSanPhamRepository extends JpaRepository<GiaTriThuocTinhSanPham, Long> {
 
 }

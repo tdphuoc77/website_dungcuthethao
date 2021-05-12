@@ -25,34 +25,29 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
+
 @Entity
 @ToString
-public class NguoiDung {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@NonNull
+public class NguoiDung extends BaseEntity{
+
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "loainguoidungID")
 	private LoaiNguoiDung loainguoidung;
 	
 	
-	@NonNull
+	
 	private String  ho;
-	@NonNull
+	
 	private String ten;
-	@NonNull
+	
 	private boolean gioiTinh;
-	@NonNull
+	
 	private String email;
-	@NonNull
+	
 	private String soDienThoai;
-	@NonNull
+	
 	private String tenDangNhap;
-	@NonNull
+	
 	private String matKhau;
 	
 	

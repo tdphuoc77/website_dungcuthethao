@@ -18,7 +18,7 @@ public class HoaDonService implements IHoaDonService {
 	}
 
 	@Override
-	public HoaDon findById(int id) {
+	public HoaDon findById(Long id) {
 		return hoaDonRepository.findOne(id);
 	}
 	

@@ -2,6 +2,8 @@ package com.websitedungcuthethao.dto;
 
 import java.time.LocalDate;
 
+import com.websitedungcuthethao.entity.BaseEntity;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -11,8 +13,7 @@ import lombok.ToString;
 @Setter
 @RequiredArgsConstructor
 @ToString
-public class SanPhamDTO {
-	private int id;
+public class SanPhamDTO extends BaseEntity {
 	private String ten;
 	private String tenDanhMuc;
 	private String tenNhaCungCap;
@@ -27,10 +28,6 @@ public class SanPhamDTO {
 	private String video;
 	private int thoiGianBaoHanh;
 	private boolean trangThai;
-	private LocalDate ngayTao;
-	private int nguoiTao;
-	private LocalDate ngaySua;
-	private int nguoiSua;
 	private String tenThuoctinh;
 	private String giaTriThuocTinh;
 }

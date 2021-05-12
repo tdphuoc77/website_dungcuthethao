@@ -16,21 +16,15 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class NhaCungCap {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	@NonNull
+public class NhaCungCap extends BaseEntity {
+
 	private String tenNhaCungCap;
 	
-	@NonNull
 	private String diachi;
-	@NonNull
+	
 	private String soDienThoai;
-	@NonNull
+	
 	private String email;
 }

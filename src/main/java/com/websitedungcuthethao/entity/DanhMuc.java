@@ -15,18 +15,9 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class DanhMuc {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@NonNull
+public class DanhMuc extends BaseEntity{
 	private String ten;
-	
-	@NonNull
-	private int danhmuccha_id;
+	private Long danhmuccha_id;
 }

@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.websitedungcuthethao.entity.HoaDon;
 
-public interface HoaDonRepository extends JpaRepository<HoaDon, Integer> {
+public interface HoaDonRepository extends JpaRepository<HoaDon, Long> {
 
 }

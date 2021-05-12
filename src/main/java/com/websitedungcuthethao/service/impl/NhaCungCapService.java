@@ -20,7 +20,7 @@ public class NhaCungCapService implements INhaCungCapService{
 	}
 
 	@Override
-	public boolean updateNCC(int id) {
+	public boolean updateNCC(Long id) {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -31,7 +31,7 @@ public class NhaCungCapService implements INhaCungCapService{
 	}
 
 	@Override
-	public NhaCungCap findNCCByID(int id) {
+	public NhaCungCap findNCCByID(Long id) {
 		return nhaCungCapRepository.findOne(id);
 	}
 }

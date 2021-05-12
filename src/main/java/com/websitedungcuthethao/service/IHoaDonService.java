@@ -4,5 +4,5 @@ import com.websitedungcuthethao.entity.HoaDon;
 
 public interface IHoaDonService {
 	void saveHoaDon(HoaDon hoaDon);
-	HoaDon findById(int id);
+	HoaDon findById(Long id);
 }

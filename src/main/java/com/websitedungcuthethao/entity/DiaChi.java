@@ -17,25 +17,16 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 @ToString
-public class DiaChi {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@NonNull
+public class DiaChi extends BaseEntity{
 	@ManyToOne
 	@JoinColumn(name = "nguoidungID")
 	private NguoiDung nguoidung;
 	
-	
-	@NonNull
 	private String quan;
-	@NonNull
+	
 	private String thanhPho;
-	@NonNull
+	
 	private String tinh;
 }
