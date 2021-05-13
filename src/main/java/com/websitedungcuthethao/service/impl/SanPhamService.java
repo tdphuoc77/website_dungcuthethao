@@ -64,5 +64,15 @@ public class SanPhamService implements ISanPhamService {
 //		sanPham.setVideo(sanPhamDTO.getVideo());
 		
 	}
+	@Override
+	public List<SanPham> findTop3SanPhamBySoLuotXem() {
+		// TODO Auto-generated method stub
+		return sanPhamRepository.findTop3SanPhamBySoLuotXem();
+	}
+	@Override
+	public List<SanPham> findTop3SanPhamGiamGiaNhieuNhat() {
+		// TODO Auto-generated method stub
+		return sanPhamRepository.findTop3SanPhamGiamGiaNhieuNhat();
+	}
 	
 }

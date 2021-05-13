@@ -26,6 +26,13 @@ public class TrangChuController {
 	public String index (Model model) {
 		ArrayList<SanPham> dsSanPham = (ArrayList<SanPham>) sanPhamService.findAll();
 		model.addAttribute("dsSanPham",dsSanPham );
+		
+		ArrayList<SanPham> dsSanPhamLuotXemCaoNhat = (ArrayList<SanPham>) sanPhamService.findTop3SanPhamBySoLuotXem();
+		model.addAttribute("dsSanPhamLuotXemCaoNhat",dsSanPhamLuotXemCaoNhat );
+		
+		ArrayList<SanPham> dsSanPhamGiamGiaCaoNhat = (ArrayList<SanPham>) sanPhamService.findTop3SanPhamGiamGiaNhieuNhat();
+		model.addAttribute("dsSanPhamGiamGiaCaoNhat",dsSanPhamGiamGiaCaoNhat );
+		
 		return "user/home";
 	}
 	
