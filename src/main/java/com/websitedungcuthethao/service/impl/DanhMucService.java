@@ -24,6 +24,17 @@ public class DanhMucService implements IDanhMucService {
 		return danhMucRepository.findByTen(ten);
 	}
 
+	@Override
+	public List<DanhMuc> findAllDanhMucConById(Long id) {
+		return danhMucRepository.findAllDanhMucConById(id);
+	}
+
+	@Override
+	public List<DanhMuc> findAllDanhMucCha() {
+		// TODO Auto-generated method stub
+		return danhMucRepository.findByDanhMucChaNull();
+	}
+
 
 	
 }

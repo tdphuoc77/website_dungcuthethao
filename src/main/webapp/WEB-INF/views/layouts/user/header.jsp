@@ -145,10 +145,13 @@
 							</h3>
 							<ul class="main-category">
 								<c:forEach items="${dsDanhMuc}" var="item">
-									<li><a href="#">${item.ten} <i
+									<li><a href="#">${item.key.ten} <i
 											class="fa fa-angle-right" aria-hidden="true"></i></a>
+
 										<ul class="sub-category">
-											<li><a href="#">accessories</a></li>
+											<c:forEach items="${item.value}" var="subItem">
+												<li><a href="#">${subItem.ten}</a></li>
+											</c:forEach>
 										</ul></li>
 								</c:forEach>
 

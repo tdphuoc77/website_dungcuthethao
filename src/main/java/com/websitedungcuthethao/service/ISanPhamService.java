@@ -12,6 +12,5 @@ public interface ISanPhamService {
 	void save (SanPham sanPham);
 	SanPham findById(Long id);
 	void updateSanPham(SanPhamDTO sanPhamDTO);
-	List<SanPham> findSanPhamGoiY();
 	
 }

@@ -18,7 +18,10 @@ import lombok.ToString;
 @Setter
 @Entity
 @ToString
-public class NhaCungCap extends BaseEntity {
+public class NhaCungCap {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	private String tenNhaCungCap;
 	

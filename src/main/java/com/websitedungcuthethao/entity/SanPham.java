@@ -33,8 +33,6 @@ import lombok.ToString;
 @ToString
 public class SanPham extends BaseEntity{
 
-	
-	
 	private String ten;
 	
 	
@@ -62,7 +60,8 @@ public class SanPham extends BaseEntity{
 	
 	private String anhDaiDien;
 	
-	private int luotXem;
+	private int soLuotXem;
+	private int soLuotMua;
 	
 	private String video;
 	

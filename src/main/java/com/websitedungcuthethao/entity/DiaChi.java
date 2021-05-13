@@ -19,7 +19,11 @@ import lombok.ToString;
 @Setter
 @Entity
 @ToString
-public class DiaChi extends BaseEntity{
+public class DiaChi{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
 	@ManyToOne
 	@JoinColumn(name = "nguoidungID")
 	private NguoiDung nguoidung;

@@ -10,8 +10,13 @@ import com.websitedungcuthethao.entity.SanPham;
 public interface ISanPhamRepository extends JpaRepository<SanPham, Long> {
 	List<SanPham> findAll();
 	List<SanPham> findByTen(String ten);
+	SanPham findById(Long id);
 	boolean deleteById(Long id);
+		
+	@Query(value = "SELECT TOP 3 *  FROM SANPHAM order by soLuotXem DESC", nativeQuery = true)
+	List<SanPham> findTop3SanPhamBySoLuotXem();
 	
-	@Query(value = "SELECT TOP 3 *  FROM SANPHAM", nativeQuery = true)
-	List<SanPham> findSanPhamGoiY();
+	@Query(value = "SELECT TOP 3 *  FROM SANPHAM order by soLuotXem DESC", nativeQuery = true)
+	List<SanPham> findTop3SanPhamGiamGiaNhieuNhat();
+	
 }
