@@ -8,5 +8,4 @@ import com.websitedungcuthethao.entity.BinhLuan;
 
 public interface BinhLuanRepository extends JpaRepository<BinhLuan, Long>{
 	List<BinhLuan> findAll();
-	boolean deleteById(Long id);
 }

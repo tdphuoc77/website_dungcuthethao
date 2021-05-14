@@ -7,12 +7,14 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.websitedungcuthethao.dto.NguoiDungDTO;
 import com.websitedungcuthethao.entity.LoaiNguoiDung;
 import com.websitedungcuthethao.entity.NguoiDung;
 import com.websitedungcuthethao.repository.NguoiDungRepository;
 
+@Transactional
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 

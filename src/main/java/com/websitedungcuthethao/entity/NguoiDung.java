@@ -1,5 +1,6 @@
 package com.websitedungcuthethao.entity;
 
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.OnDelete;
+import org.springframework.data.annotation.CreatedDate;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,29 +30,31 @@ import lombok.ToString;
 
 @Entity
 @ToString
-public class NguoiDung extends BaseEntity{
+public class NguoiDung {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
+	@CreatedDate
+	private LocalDate ngayTao;
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "loainguoidungID")
 	private LoaiNguoiDung loainguoidung;
-	
-	
-	
-	private String  ho;
-	
+
+	private String ho;
+
 	private String ten;
-	
+
 	private boolean gioiTinh;
-	
+
 	private String email;
-	
+
 	private String soDienThoai;
-	
+
 	private String tenDangNhap;
-	
+
 	private String matKhau;
-	
-	
+
 	@OneToMany(mappedBy = "nguoidung")
 	Set<DiaChi> dsDiaChi = new HashSet<DiaChi>();
 }

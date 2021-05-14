@@ -19,11 +19,6 @@ public class NhaCungCapService implements INhaCungCapService{
 		return nhaCungCapRepository.save(nhaCungCap);
 	}
 
-	@Override
-	public boolean updateNCC(Long id) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	@Override
 	public List<NhaCungCap> findByTenNhaCungCap(String ten) {
@@ -33,5 +28,12 @@ public class NhaCungCapService implements INhaCungCapService{
 	@Override
 	public NhaCungCap findNCCByID(Long id) {
 		return nhaCungCapRepository.findOne(id);
+	}
+
+
+	@Override
+	public boolean updateNCC(NhaCungCap nhaCungCap) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

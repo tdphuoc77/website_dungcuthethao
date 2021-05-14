@@ -4,5 +4,4 @@ import com.websitedungcuthethao.entity.ChiTietHoaDon;
 
 public interface IChiTietHoaDonService {
 	void saveCTHD(ChiTietHoaDon chiTietHoaDon);
-	void updateCTHD(ChiTietHoaDon chiTietHoaDon);
 }
