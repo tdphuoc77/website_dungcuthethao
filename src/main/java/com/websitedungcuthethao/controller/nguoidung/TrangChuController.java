@@ -1,4 +1,4 @@
-package com.websitedungcuthethao.controller.user;
+package com.websitedungcuthethao.controller.nguoidung;
 
 import java.util.ArrayList;
 
@@ -33,7 +33,7 @@ public class TrangChuController {
 		ArrayList<SanPham> dsSanPhamGiamGiaCaoNhat = (ArrayList<SanPham>) sanPhamService.findTop3SanPhamGiamGiaNhieuNhat();
 		model.addAttribute("dsSanPhamGiamGiaCaoNhat",dsSanPhamGiamGiaCaoNhat );
 		
-		return "user/home";
+		return "nguoidung/trangchu";
 	}
 	
 }

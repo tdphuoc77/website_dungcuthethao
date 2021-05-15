@@ -54,6 +54,7 @@ public class NguoiDung {
 	private String tenDangNhap;
 
 	private String matKhau;
+	private boolean trangThai;
 
 	@OneToMany(mappedBy = "nguoidung")
 	Set<DiaChi> dsDiaChi = new HashSet<DiaChi>();

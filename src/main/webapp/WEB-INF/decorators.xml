@@ -1,9 +1,13 @@
 <decorators defaultdir="/WEB-INF/views/layouts">
-	<decorator name="nguoi-dung" page="user.jsp">
+	<decorator name="nguoi-dung" page="nguoidung.jsp">
 		<pattern>/*</pattern>
 	</decorator>
 	
-	<decorator name="quan-tri" page="admin.jsp">
+	<decorator name="quan-tri" page="quantri.jsp">
 		<pattern>/quan-tri/*</pattern>
+	</decorator>
+	
+	<decorator name="dang-nhap" page="dangnhap.jsp">
+		<pattern>/dang-nhap</pattern>
 	</decorator>
 </decorators>

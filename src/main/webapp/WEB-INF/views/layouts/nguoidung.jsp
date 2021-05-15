@@ -49,11 +49,11 @@
 </head>
 <!--/head-->
 <body>
-	<%@include file="/WEB-INF/views/layouts/user/header.jsp"%>
+	<%@include file="/WEB-INF/views/layouts/nguoidung/header.jsp"%>
 
 	<decorator:body />
 
-	<%@include file="/WEB-INF/views/layouts/user/footer.jsp"%>
+	<%@include file="/WEB-INF/views/layouts/nguoidung/footer.jsp"%>
 
 	<!-- Jquery -->
 	<script src="<c:url value="/resources/user/js/jquery.min.js"/>"></script>

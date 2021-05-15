@@ -29,7 +29,9 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
 			throws IOException {
+		System.out.println(1);
 		String targetUrl = determineTargetUrl(authentication);
+		
 		if (response.isCommitted()) {
 			return;
 		}
@@ -39,6 +41,9 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 	private String determineTargetUrl(Authentication authentication) {
 		String url = "";
 		List<String> roles = SecurityUtils.getAuthorities();
+		roles.forEach(t->{
+			System.out.println("Rolelist"+t);
+		});
 		if (isAdmin(roles)) {
 			url = "/quan-tri/trang-chu";
 		} else if (isUser(roles)) {

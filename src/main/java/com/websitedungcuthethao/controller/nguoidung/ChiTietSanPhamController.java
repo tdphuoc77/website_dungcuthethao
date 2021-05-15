@@ -1,4 +1,4 @@
-package com.websitedungcuthethao.controller.user;
+package com.websitedungcuthethao.controller.nguoidung;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -24,7 +24,7 @@ public class NguoiDungDTO extends User {
 	public NguoiDungDTO(String username, String password, boolean enabled, boolean accountNonExpired,
 			boolean credentialsNonExpired, boolean accountNonLocked,
 			GrantedAuthority anthority) {
-		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, (Collection<? extends GrantedAuthority>) anthority);
+		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked,  (Collection<? extends GrantedAuthority>) anthority);
 		// TODO Auto-generated constructor stub
 	}
 
