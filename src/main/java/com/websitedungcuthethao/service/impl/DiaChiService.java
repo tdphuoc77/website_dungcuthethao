@@ -15,8 +15,8 @@ public class DiaChiService implements IDiaChiService{
 		 diaChiRepository.save(diaChi);
 	}
 	@Override
-	public boolean updateDiaChi( ) {
-		
+	public boolean updateDiaChi(NguoiDungDTO nguoiDungDTO) {
+		return true;
 	}
 
 }
