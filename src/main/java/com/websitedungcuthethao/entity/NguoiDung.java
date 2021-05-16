@@ -13,15 +13,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
-import org.hibernate.annotations.OnDelete;
 import org.springframework.data.annotation.CreatedDate;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -54,6 +49,7 @@ public class NguoiDung {
 	private String tenDangNhap;
 
 	private String matKhau;
+	
 	private boolean trangThai;
 
 	@OneToMany(mappedBy = "nguoidung")

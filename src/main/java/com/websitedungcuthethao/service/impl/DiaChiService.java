@@ -1,8 +1,10 @@
 package com.websitedungcuthethao.service.impl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
-import com.websitedungcuthethao.dto.NguoiDungDTO;
+import com.websitedungcuthethao.dto.NguoiDungDTONew;
 import com.websitedungcuthethao.entity.DiaChi;
 import com.websitedungcuthethao.repository.DiaChiRepository;
 import com.websitedungcuthethao.service.IDiaChiService;
@@ -15,8 +17,12 @@ public class DiaChiService implements IDiaChiService{
 		 diaChiRepository.save(diaChi);
 	}
 	@Override
-	public boolean updateDiaChi(NguoiDungDTO nguoiDungDTO) {
-		return true;
+	public void updateDiaChi(NguoiDungDTONew nguoiDungDTONew) {
+		List<DiaChi> list = (List<DiaChi>) nguoiDungDTONew.getDsDiaChi();
+		for (DiaChi diaChi : list) {
+			diaChiRepository.save(diaChi);
+		}		
 	}
+	
 
 }

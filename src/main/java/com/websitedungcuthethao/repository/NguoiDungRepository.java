@@ -9,5 +9,6 @@ import com.websitedungcuthethao.entity.NguoiDung;
 public interface NguoiDungRepository extends JpaRepository<NguoiDung,Long> {
 	NguoiDung findOneByTenDangNhapAndTrangThai(String tenDangNhap, boolean trangThai);
 	List<NguoiDung> findByTenAndHo(String ten,String ho);
+	NguoiDung findOneByTenDangNhap(String tenDangNhap);
 	
 }

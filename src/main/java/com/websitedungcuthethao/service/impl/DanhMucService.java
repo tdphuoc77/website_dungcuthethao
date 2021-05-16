@@ -31,8 +31,15 @@ public class DanhMucService implements IDanhMucService {
 
 	@Override
 	public List<DanhMuc> findAllDanhMucCha() {
-		// TODO Auto-generated method stub
 		return danhMucRepository.findByDanhMucChaNull();
+	}
+
+	@Override
+	public void updateDanhMuc(DanhMuc danhMuc) {
+		DanhMuc dM= danhMucRepository.findOne(danhMuc.getId());
+		if(dM!=null) {
+			danhMucRepository.save(danhMuc);
+		}		
 	}
 
 

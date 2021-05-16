@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.websitedungcuthethao.entity.DanhMuc;
 import com.websitedungcuthethao.entity.SanPham;
 import com.websitedungcuthethao.service.impl.DanhMucService;
 import com.websitedungcuthethao.service.impl.SanPhamService;

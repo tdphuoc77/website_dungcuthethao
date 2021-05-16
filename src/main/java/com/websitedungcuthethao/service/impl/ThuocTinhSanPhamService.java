@@ -21,7 +21,19 @@ public class ThuocTinhSanPhamService implements IThuocTinhSanPhamService {
 
 	@Override
 	public void updateTTSP(ThuocTinhSanPham thuocTinhSanPham) {
-		// TODO Auto-generated method stub
+		if(thuocTinhSanPhamRepository.findOne(thuocTinhSanPham.getId())!=null) {
+			thuocTinhSanPhamRepository.save(thuocTinhSanPham);
+		}
 		
+	}
+
+	@Override
+	public ThuocTinhSanPham findById(Long id) {
+		return thuocTinhSanPhamRepository.findOne(id);
+	}
+
+	@Override
+	public ThuocTinhSanPham findOneByTenThuoctinh(String ten) {
+		return thuocTinhSanPhamRepository.findOneByTenThuoctinh(ten);
 	}
 }

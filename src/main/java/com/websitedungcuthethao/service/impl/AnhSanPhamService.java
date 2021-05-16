@@ -26,6 +26,13 @@ public class AnhSanPhamService implements IAnhSanPhamService {
 		}
 	}
 
+	@Override
+	public void deleteAnhSP(Long id) {
+		if(anhSanPhamRepository.findOne(id)!=null) {
+			anhSanPhamRepository.delete(id);
+		}
+	}
+
 	
 	
 

@@ -9,4 +9,5 @@ public interface IDanhMucService {
 	DanhMuc findByTen(String ten);
 	List<DanhMuc> findAllDanhMucConById(Long id);
 	List<DanhMuc> findAllDanhMucCha();
+	void updateDanhMuc(DanhMuc danhMuc);
 }

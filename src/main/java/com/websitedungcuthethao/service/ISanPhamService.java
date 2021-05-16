@@ -8,7 +8,7 @@ import com.websitedungcuthethao.entity.SanPham;
 public interface ISanPhamService {
 	List<SanPham> findAll();
 	List<SanPham> findByTen(String ten);
-	boolean deleteById(Long id);
+	void deleteById(Long id);
 	void save (SanPham sanPham);
 	SanPham findById(Long id);
 	void updateSanPham(SanPhamDTO sanPhamDTO);

@@ -2,9 +2,6 @@ package com.websitedungcuthethao.dto;
 
 import java.time.LocalDate;
 
-import com.websitedungcuthethao.entity.DanhMuc;
-import com.websitedungcuthethao.entity.NhaCungCap;
-
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -16,11 +13,9 @@ import lombok.ToString;
 @ToString
 public class SanPhamDTO {
 	private Long id;
-	private LocalDate ngayTao;
-	private String nguoiTao;
 	private String ten;
-	private DanhMuc danhmuc;
-	private NhaCungCap nhacungcap;
+	private String tenDanhMuc;
+	private String tenNhaCungCap;
 	private String moTa;
 	private String thuongHieu;
 	private String noiDung;
