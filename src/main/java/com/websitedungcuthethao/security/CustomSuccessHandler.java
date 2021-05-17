@@ -29,7 +29,6 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
 			throws IOException {
-		System.out.println(1);
 		String targetUrl = determineTargetUrl(authentication);
 		
 		if (response.isCommitted()) {

@@ -7,11 +7,12 @@ import org.springframework.security.core.userdetails.User;
 
 public class NguoiDungDTO extends User {
 
-	@SuppressWarnings("unchecked")
+
+
 	public NguoiDungDTO(String username, String password, boolean enabled, boolean accountNonExpired,
 			boolean credentialsNonExpired, boolean accountNonLocked,
-			GrantedAuthority anthority) {
-		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked,  (Collection<? extends GrantedAuthority>) anthority);
+			Collection<? extends GrantedAuthority> authorities) {
+		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,6 +20,16 @@ public class NguoiDungDTO extends User {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public String toString() {
+		return "NguoiDungDTO [getAuthorities()=" + getAuthorities() + ", getPassword()=" + getPassword()
+				+ ", getUsername()=" + getUsername() + ", isEnabled()=" + isEnabled() + ", isAccountNonExpired()="
+				+ isAccountNonExpired() + ", isAccountNonLocked()=" + isAccountNonLocked()
+				+ ", isCredentialsNonExpired()=" + isCredentialsNonExpired() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + "]";
+	}
+	
 	
 	
 }

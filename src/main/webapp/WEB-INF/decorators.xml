@@ -3,7 +3,7 @@
 		<pattern>/*</pattern>
 	</decorator>
 	
-	<decorator name="quan-tri" page="quantri.jsp">
+	<decorator name="quan-tri" page="nguoidung.jsp">
 		<pattern>/quan-tri/*</pattern>
 	</decorator>
 	

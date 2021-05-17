@@ -1,8 +1,12 @@
 package com.websitedungcuthethao.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -26,15 +30,19 @@ public class CustomUserDetailsService implements UserDetailsService {
 		NguoiDung nguoiDung= nguoiDungRepository.findOneByTenDangNhapAndTrangThai(username, SystemConstant.ACTIVE_STATUS);
 		
 		if(nguoiDung ==null) {
-			throw new UsernameNotFoundException("Không tìm thấy người dùng");
+			throw new UsernameNotFoundException("KhÃ´ng tÃ¬m tháº¥y ngÆ°á»�i dÃ¹ng");
 		}
-		// put thong tin nguoi dung vao security  và duy tri dang nhap
+		// put thong tin nguoi dung vao security  vÃ  duy tri dang nhap
 		System.out.println(nguoiDung.toString());
 		LoaiNguoiDung loaiNguoiDung= nguoiDung.getLoainguoidung();
 		System.out.println(loaiNguoiDung.toString());
-		GrantedAuthority anthority=new SimpleGrantedAuthority(loaiNguoiDung.getTenLoai());
 		
-		NguoiDungDTO nguoiDungDTO= new NguoiDungDTO(nguoiDung.getTenDangNhap(), nguoiDung.getMatKhau(), true, true, true, true, anthority);
+		
+		List<GrantedAuthority> authorties =new ArrayList<GrantedAuthority>();
+		authorties.add(new SimpleGrantedAuthority(loaiNguoiDung.getTenLoai()));
+		
+		
+		NguoiDungDTO nguoiDungDTO= new NguoiDungDTO(nguoiDung.getTenDangNhap(), nguoiDung.getMatKhau(), true, true, true, true, authorties);
 		return nguoiDungDTO;
 	}
 

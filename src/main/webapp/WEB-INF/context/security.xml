@@ -11,8 +11,9 @@
 	<http auto-config="false" use-expressions="true"
 		disable-url-rewriting="true">
 
-		<intercept-url pattern="/quan-tri/trang-chu"
-			access="hasAnyRole('ADMIN')" />
+		<!-- <intercept-url pattern="/quan-tri/trang-chu"
+			access="hasAnyRole('ADMIN')" /> -->
+			<intercept-url pattern="/resources/**" access="permitAll" />
 
 		<access-denied-handler
 			error-page="/accessDenied" />
@@ -30,7 +31,7 @@
 	<authentication-manager>
 		<authentication-provider
 			user-service-ref="customUserDetailsService">
-			<!-- <password-encoder ref="bcryptEncoder" /> -->
+			<password-encoder ref="bcryptEncoder" /> 
 		</authentication-provider>
 	</authentication-manager>
 

@@ -22,7 +22,7 @@
 					<div class="right-content">
 						<ul class="list-main">
 							<li><i class="ti-user"></i> <a href="#">Tài khoản</a></li>
-							<li><i class="ti-power-off"></i><a href="login.html#">Đăng
+							<li><i class="ti-power-off"></i><a href=" <c:url value="/dang-nhap"/> ">Đăng
 									Nhập</a></li>
 						</ul>
 					</div>
@@ -38,7 +38,7 @@
 				<div class="col-lg-2 col-md-2 col-12">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html"><img
+						<a href="<c:url value="/"/>"><img
 							src="<c:url value="/resources/user/images/logo.png"/>" alt="logo"></a>
 					</div>
 					<!--/ End Logo -->
@@ -92,7 +92,7 @@
 								class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 						</div>
 						<div class="sinlge-bar shopping">
-							<a href="#" class="single-icon"><i class="ti-bag"></i> <span
+							<a href=" <c:url value="gio-hang"/> " class="single-icon"><i class="ti-bag"></i> <span
 								class="total-count">2</span></a>
 							<!-- Shopping Item -->
 							<div class="shopping-item">
@@ -166,7 +166,7 @@
 									<div class="nav-inner">
 										<ul class="nav main-menu menu navbar-nav">
 											<li class="active"><a href="#">Trang chủ</a></li>
-											<li><a href="#">Sản phẩm</a></li>
+											<li><a href=" <c:url value="danh-sach-san-pham"/> ">Sản phẩm</a></li>
 											<li><a href="#">Service</a></li>
 											<li><a href="#">Shop<i class="ti-angle-down"></i><span
 													class="new">New</span></a>
