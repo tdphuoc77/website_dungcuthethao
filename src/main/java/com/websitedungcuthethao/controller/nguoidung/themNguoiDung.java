@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.websitedungcuthethao.constant.SystemConstant;
 import com.websitedungcuthethao.dto.NguoiDungDTONew;
 import com.websitedungcuthethao.entity.NguoiDung;
 import com.websitedungcuthethao.service.impl.LoaiNguoiDungService;
@@ -30,7 +31,7 @@ public class themNguoiDung {
 		NguoiDung nguoiDung = new NguoiDung(LocalDate.now(), loaiNguoiDungService.findByID(1), nguoiDungDTONew.getHo(),
 				nguoiDungDTONew.getTen(), nguoiDungDTONew.isGioiTinh(), nguoiDungDTONew.getNgaySinh(), nguoiDungDTONew.getEmail(),
 				nguoiDungDTONew.getSoDienThoai(), nguoiDungDTONew.getTenDangNhap(),
-				BCrypt.hashpw(nguoiDungDTONew.getMatKhau(), BCrypt.gensalt(12)), ACTIVE_STATUS,
+				BCrypt.hashpw(nguoiDungDTONew.getMatKhau(), BCrypt.gensalt(12)), SystemConstant.ACTIVE_STATUS,
 				nguoiDungDTONew.getDsDiaChi());
 		
 		nguoiDungService.saveNguoiDung(nguoiDung);

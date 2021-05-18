@@ -14,4 +14,8 @@
 	<decorator name="dang-ky" page="dangky_nguoidung.jsp">
 		<pattern>/dangky</pattern>
 	</decorator>
+	
+	<decorator name="tim-tai-khoan" page="timtaikhoan.jsp">
+		<pattern>/tim-tai-khoan</pattern>
+	</decorator>
 </decorators>
