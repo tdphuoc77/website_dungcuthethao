@@ -49,7 +49,7 @@
 							</div>
 							<div class="card-footer text-center">
 								<div class="small">
-									<a href="register.html">Chưa có tài khoản? Đăng ký ngay!</a>
+									<a href='<c:url value="dangky"/>'>Chưa có tài khoản? Đăng ký ngay!</a>
 								</div>
 							</div>
 						</div>

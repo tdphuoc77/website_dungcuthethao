@@ -27,8 +27,8 @@
 			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!-- sql --> 
+
+		<!-- sql -->
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
@@ -156,6 +156,15 @@
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
 			<version>${spring.data}</version>
+		</dependency>
+
+		<!-- jbcrypt -->
+		
+		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+		<dependency>
+			<groupId>org.mindrot</groupId>
+			<artifactId>jbcrypt</artifactId>
+			<version>0.4</version>
 		</dependency>
 
 

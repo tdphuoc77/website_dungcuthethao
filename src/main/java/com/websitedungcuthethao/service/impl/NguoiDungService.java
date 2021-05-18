@@ -47,6 +47,7 @@ public class NguoiDungService  implements INguoiDungService{
 			nguoiDung.setGioiTinh(nguoiDungDTONew.isGioiTinh());
 			nguoiDung.setEmail(nguoiDungDTONew.getEmail());
 			nguoiDung.setSoDienThoai(nguoiDungDTONew.getSoDienThoai());
+			nguoiDung.setNgaySinh(nguoiDungDTONew.getNgaySinh());
 			nguoiDungRepository.save(nguoiDung);
 		}
 		

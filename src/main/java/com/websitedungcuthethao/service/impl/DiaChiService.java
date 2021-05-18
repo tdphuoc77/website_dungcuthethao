@@ -16,6 +16,7 @@ public class DiaChiService implements IDiaChiService{
 	public void saveDiaChi(DiaChi diaChi) {
 		 diaChiRepository.save(diaChi);
 	}
+	@SuppressWarnings("unchecked")
 	@Override
 	public void updateDiaChi(NguoiDungDTONew nguoiDungDTONew) {
 		List<DiaChi> list = (List<DiaChi>) nguoiDungDTONew.getDsDiaChi();

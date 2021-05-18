@@ -1,5 +1,6 @@
 package com.websitedungcuthethao.dto;
 
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,11 +15,40 @@ public class NguoiDungDTONew {
 
 	private boolean gioiTinh;
 
+	private LocalDate ngaySinh;
+
+	public LocalDate getNgaySinh() {
+		return ngaySinh;
+	}
+
+	public void setNgaySinh(LocalDate ngaySinh) {
+		this.ngaySinh = ngaySinh;
+
+	}
+
 	private String email;
 
 	private String soDienThoai;
 
+	private String tenDangNhap;
 
+	private String matKhau;
+
+	public String getTenDangNhap() {
+		return tenDangNhap;
+	}
+
+	public void setTenDangNhap(String tenDangNhap) {
+		this.tenDangNhap = tenDangNhap;
+	}
+
+	public String getMatKhau() {
+		return matKhau;
+	}
+
+	public void setMatKhau(String matKhau) {
+		this.matKhau = matKhau;
+	}
 
 	Set<DiaChi> dsDiaChi = new HashSet<DiaChi>();
 
@@ -29,8 +59,6 @@ public class NguoiDungDTONew {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-	
 
 	public String getHo() {
 		return ho;
@@ -50,6 +78,7 @@ public class NguoiDungDTONew {
 
 	public boolean isGioiTinh() {
 		return gioiTinh;
+
 	}
 
 	public void setGioiTinh(boolean gioiTinh) {
@@ -72,7 +101,6 @@ public class NguoiDungDTONew {
 		this.soDienThoai = soDienThoai;
 	}
 
-	
 	public Set<DiaChi> getDsDiaChi() {
 		return dsDiaChi;
 	}
@@ -80,5 +108,7 @@ public class NguoiDungDTONew {
 	public void setDsDiaChi(Set<DiaChi> dsDiaChi) {
 		this.dsDiaChi = dsDiaChi;
 	}
+	
+	
 
 }

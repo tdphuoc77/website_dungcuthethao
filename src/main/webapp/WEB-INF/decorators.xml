@@ -10,4 +10,8 @@
 	<decorator name="dang-nhap" page="dangnhap.jsp">
 		<pattern>/dang-nhap</pattern>
 	</decorator>
+	
+	<decorator name="dang-ky" page="dangky_nguoidung.jsp">
+		<pattern>/dangky</pattern>
+	</decorator>
 </decorators>

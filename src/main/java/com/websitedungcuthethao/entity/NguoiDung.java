@@ -16,14 +16,17 @@ import javax.persistence.OneToMany;
 
 import org.springframework.data.annotation.CreatedDate;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
-
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class NguoiDung {
 	@Id
@@ -41,6 +44,8 @@ public class NguoiDung {
 	private String ten;
 
 	private boolean gioiTinh;
+	
+	private LocalDate ngaySinh;
 
 	private String email;
 
@@ -54,4 +59,23 @@ public class NguoiDung {
 
 	@OneToMany(mappedBy = "nguoidung")
 	Set<DiaChi> dsDiaChi = new HashSet<DiaChi>();
+	public NguoiDung(LocalDate ngayTao, LoaiNguoiDung loainguoidung, String ho, String ten, boolean gioiTinh,
+			LocalDate ngaySinh, String email, String soDienThoai, String tenDangNhap, String matKhau, boolean trangThai,
+			Set<DiaChi> dsDiaChi) {
+		super();
+		this.ngayTao = ngayTao;
+		this.loainguoidung = loainguoidung;
+		this.ho = ho;
+		this.ten = ten;
+		this.gioiTinh = gioiTinh;
+		this.ngaySinh = ngaySinh;
+		this.email = email;
+		this.soDienThoai = soDienThoai;
+		this.tenDangNhap = tenDangNhap;
+		this.matKhau = matKhau;
+		this.trangThai = trangThai;
+		this.dsDiaChi = dsDiaChi;
+	}
+	
+	
 }
